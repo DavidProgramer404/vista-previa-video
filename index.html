@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista previa de video</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--Navegacion -->
+
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1>
+            <input type="text" placeholder="Search" name="query" class="search">
+            <button type="button" class="btn">Login</button>
+        </div>
+    </div>
+
+    <!-- Container-->
+
+    <div class="flex-container">
+
+        <!-- columna izquierda  -->
+
+        <div class="col-izquierda">
+            <video controls muted class="video-mp4" onmouseover="over(this)" onmouseleave="out(this)" controls
+                src="./video/SPACE 4K Edit.mp4"></video>
+
+            <!-- video info -->
+
+            <div class="row">
+                <div class="start">
+                    <h1>Example Video Title</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user">
+                        <img src="assets/user.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Example User Name</span>
+                    </div>
+                </div>
+                <button type="button" class="boton">Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="col-derecha">
+            <h3 class="sub-header">Up-Next</h3>
+            <div class="video-small">
+                <img src="assets/video-placeholder.png" alt="video placeholder" class="video-derecha">
+                <span class="video-title">10 Facts About ET's Cat!</span>
+            </div>
+            <div class="video-small">
+                <img src="assets/video-placeholder.png" alt="video placeholder" class="video-derecha">
+                <span class="video-title">10 Facts About ET's Cat!</span>
+            </div>
+            <div class="video-small">
+                <img src="assets/video-placeholder.png" alt="video placeholder" class="video-derecha">
+                <span class="video-title">5 Cosplay Tips</span>
+            </div>
+            <div class="video-small">
+                <img src="assets/video-placeholder.png" alt="video placeholder" class="video-derecha">
+                <span class="video-title">Boy Battles Dinobot in Thunderdome</span>
+            </div>
+        </div>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>
